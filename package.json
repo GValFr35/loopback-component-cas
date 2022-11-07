@@ -1,6 +1,6 @@
 {
   "name": "loopback-component-cas",
-  "version": "0.5.20",
+  "version": "0.5.21",
   "description": "Loopback CAS Authentification",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "component"
   ],
   "author": "Sebastien Bechet <sebastien.bechet@osinix.com>",
-  "bugs": "https://github.com/sbechet/loopback-component-cas/issues",
+  "bugs": "https://github.com/GValFr35/loopback-component-cas/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sbechet/loopback-component-cas.git"
+    "url": "https://github.com/GValFr35/loopback-component-cas.git"
   },
   "license": "MIT",
   "dependencies": {

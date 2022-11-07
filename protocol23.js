@@ -105,6 +105,9 @@ module.exports = function (app, config, req, res, next, loginCallback, isProtoco
             case "lastname":
               returnProfile.attributes.lastname = profile.name.familyName
               break
+            case "accesstoken":
+              returnProfile.attributes.accessToken = tgt.id
+              break
             default:
               if ( (att != 'authenticationDate') &&
                   (att != 'longTermAuthenticationRequestTokenUsed') &&
