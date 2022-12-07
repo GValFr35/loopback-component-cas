@@ -101,12 +101,12 @@ module.exports = function (app, config, req, res, next, loginCallback, isProtoco
               break
             case "firstname":
               if (profile.name) {
-                returnProfile.attributes.firstname = profile.name.givenName;
+                returnProfile.attributes.firstname = profile.name.givenName
               }
               break
             case "lastname":
               if (profile.name) {
-                returnProfile.attributes.lastname = profile.name.familyName;
+                returnProfile.attributes.lastname = profile.name.familyName
               }
               break
             case "accesstoken":
