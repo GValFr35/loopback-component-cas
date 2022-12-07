@@ -110,9 +110,6 @@ module.exports = function (app, config, req, res, next, loginCallback, isProtoco
               }
               break
             case "accesstoken":
-              if (!tgt.id) {
-                debug("no TGT ID");
-              }
               returnProfile.attributes.accessToken = tgt.id
               break
             default:
