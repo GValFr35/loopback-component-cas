@@ -100,12 +100,19 @@ module.exports = function (app, config, req, res, next, loginCallback, isProtoco
               returnProfile.attributes.email = user.email
               break
             case "firstname":
-              returnProfile.attributes.firstname = profile.name.givenName
+              if (profile.name) {
+                returnProfile.attributes.firstname = profile.name.givenName;
+              }
               break
             case "lastname":
-              returnProfile.attributes.lastname = profile.name.familyName
+              if (profile.name) {
+                returnProfile.attributes.lastname = profile.name.familyName;
+              }
               break
             case "accesstoken":
+              if (!tgt.id) {
+                debug("no TGT ID");
+              }
               returnProfile.attributes.accessToken = tgt.id
               break
             default:
